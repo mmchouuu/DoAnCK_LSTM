@@ -1,0 +1,8 @@
+# Gợi ý tối thiểu (sẽ chỉnh sau)
+torch>=2.3.0
+torchtext>=0.18.0
+spacy>=3.7.0
+nltk>=3.9
+matplotlib>=3.8
+pyyaml>=6.0
+tqdm>=4.66
