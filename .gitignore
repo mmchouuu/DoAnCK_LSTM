@@ -5,12 +5,6 @@ __pycache__/
 *.ipynb_checkpoints/
 .venv/
 .env
-
-# Model/artifacts
 checkpoints/
 report/*.docx
 report/figures/*.png
-
-# Data (tùy nhóm, có thể bỏ comment nếu muốn giữ dữ liệu nhỏ)
-# data/raw/
-# data/processed/

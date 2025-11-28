@@ -1,12 +1,12 @@
 <h1 align="center"><b>ĐỒ ÁN CUỐI KỲ</b></h1>
-<h2 align="center"><b>MACHINE TRANSLATION EN→FR (Encoder–Decoder LSTM)</b></h2>
+<h2 align="center"><b>MACHINE TRANSLATION EN→DE (Encoder–Decoder LSTM)</b></h2>
 
 ## I. Tổng quan
-Đồ án cuối kỳ môn Xử lý ngôn ngữ tự nhiên - NLP: **Xây dựng mô hình Dịch Máy** từ tiếng Anh tiếng Pháp bằng kiến trúc **Encoder–Decoder sử dụng LSTM**.  
+Đồ án cuối kỳ môn Xử lý ngôn ngữ tự nhiên - NLP: **Xây dựng mô hình Dịch Máy** tiếng Anh sang tiếng Đức (EN→DE) bằng kiến trúc **Encoder–Decoder sử dụng LSTM (Seq2Seq)**.  
 Dự án được hiện thực bằng  **Python, PyTorch, TorchText, SpaCy**, gồm 3 phần chính:
 
 - Chuẩn bị & tiền xử lý dữ liệu song ngữ, xây dựng từ điển (vocabulary).
-- Xây dựng và huấn luyện mô hình Seq2Seq LSTM cho bài toán EN→FR.
+- Xây dựng và huấn luyện mô hình Seq2Seq LSTM cho bài toán EN→DE.
 - Đánh giá mô hình bằng BLEU Score và phân tích các lỗi dịch.
 
 Toàn bộ mã nguồn, mô hình, và báo cáo được tổ chức theo cấu trúc thư mục chuẩn trong repo này.
@@ -20,10 +20,10 @@ Python, PyTorch, TorchText, SpaCy, NLTK, Matplotlib, YAML
 ## II. Thành viên & Phân công công việc
 Nhóm gồm **2 thành viên**, mỗi người đều tham gia cả **code** lẫn **viết báo cáo**.
 
-| Thành viên                       | Phần code chính                                            | Phần báo cáo chính                                            | Sản phẩm cần có                                                                              |
-| -------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| **Người 1 – Data & Pipeline**    | Xử lý dữ liệu, tokenization, tạo vocab, DataLoader, config | Giới thiệu đề tài, mô tả dữ liệu & pipeline xử lý             | `data/prepare_dataset.py`, `data/dataloader_utils.py`, `vocab_*.pkl`, hình minh hoạ pipeline |
-| **Người 2 – Model & Evaluation** | Encoder, Decoder, Seq2Seq, train loop, inference, BLEU     | Mô tả mô hình, huấn luyện, đánh giá & phân tích lỗi, tổng kết | `models/*.py`, `evaluation/*.py`, biểu đồ loss, bảng BLEU, ví dụ dịch                        |
+| Thành viên | Phần code chính | Phần báo cáo chính | Sản phẩm |
+|-----------|------------------|---------------------|----------|
+| **Người 1 – Data & Pipeline** | Chuẩn bị dữ liệu, tokenization, vocab, DataLoader | Giới thiệu đề tài, mô tả dữ liệu & pipeline | `data/*.py`, vocab, pipeline figure |
+| **Người 2 – Model & Evaluation** | Encoder, Decoder, Seq2Seq, train loop, BLEU, inference | Huấn luyện, đánh giá, phân tích lỗi, kết luận | `models/*.py`, `evaluation/*.py`, loss plot |
 
 
 ---
